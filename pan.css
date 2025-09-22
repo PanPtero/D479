@@ -21,7 +21,7 @@ li, p, h1, h2, h3, h4 {
 td {align-content: first baseline;}
 
 #pop {
-    display:none;
+    display: none;
     flex-direction: column;
     position: fixed;
     top: 25%;
