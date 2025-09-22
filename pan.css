@@ -33,6 +33,7 @@ td {align-content: first baseline;}
 }
 
 #x {
+    cursor: pointer;
     color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
     align-self: center;
