@@ -6,18 +6,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taniti - Plan Your Stay</title>
+    <script>
+        let pop = document.getElementbyId("pop")
+        function showAck() {
+            document.getElementById("pop").style.display = "flex"
+        }
+        function hideAck() {
+            document.getElementById("pop").style.display = "none"
+        }
+        function copy() {
+            alert("no rights reserved")
+        }
+    </script>
 </head>
 <body>
     <header>
         <a class="logo" href="index.html">The Island of Taniti</a>
         <nav>
             <a class="nav" href="index.html">HOME</a>
-            <a class="nav" href="entertainment.html">ATTRACTIONS</a>
             <a class="nav" href="resturaunts.html">FOOD</a>
             <a class="nav active" href="visit.html">VISIT</a>
         </nav>
         <a href="search.html"><img src="media/search.png" alt="Search Icon" style="width:40px;height:40px; margin-left: auto;"></a>
     </header>
+    <div class="cover" style="background-image: url(media/Tropical-Aaron_Escobar.jpg); background-position: 0 -400px"></div>
     <main>
         <table>
             <tr>
@@ -36,7 +48,15 @@
                     <p>Public buses serve Taniti City and run from 5 a.m. to 11 p.m. every day. Private buses serve the rest of the island. Taxis are available in Taniti City, and rental cars can be rented from a local rental agency near the airport.<br>Bikes and helmets are available to rent from several vendors (helmets are required by law). Taniti City is fairly flat and very walkable. Many tourists stay in the area surrounding Merriton Landing: this area is easy to explore on foot.</p>
                 </td>
             </tr>
-                        <tr>
+            <tr>
+                <td>
+                    <h1>Attractions in Taniti</h1>
+                </td>
+                <td>
+                    <p>Most tourists spend most of their time in Taniti City, which boasts native architecture and nearby white, sandy beaches that encircle Yellow Leaf Bay. Other popular activities include boat or bus tours of the island, hikes in the rainforest, or visits to Taniti’s active volcano. Discover the best attractions in Taniti, from stunning beaches to vibrant cultural sites. Whether you're looking for adventure, relaxation, or a bit of both, Taniti has something for everyone.</p>
+                </td>
+            </tr>
+            <tr>
                 <td>
                     <h1>Lodging</h1>
                 </td>
@@ -47,7 +67,21 @@
         </table>
     </main>
     <footer>
-        <a>&copy; 2069 The Island of Taniti</a>|<a>Acknowledgements</a>
+        <div id="pop">
+            <div style="display:flex; flex-direction: row;">
+                <h2>Acknowledgements</h2>
+                <a id="x" onclick="hideAck()">X</a>
+            </div>
+            <hr>
+            <ul>
+                <li>Favicon created by Brenton "PanPtero" Baublitz</li>
+                <li>All images used on this site are licensed under Creative Commons 3.0 or 2.0</li>
+                <li>Cover image for Home page taken by <a href="https://pxhere.com/en/photographer/3461369">Даниил Хогоев</a></li>
+                <li>Images used on Food page taken by <a href="https://www.flickr.com/photos/tanuanand/">Tanu Anand</a></li>
+                <li>Cover image for Visit page taken by <a href=https://en.wikipedia.org/wiki/User:Aaron1a12">Aaron Escobar</a></li>
+            </ul>
+        </div>
+        <a onclick="copy()">&copy; 2069 The Island of Taniti</a>|<a onclick="showAck()">Acknowledgements</a>
     </footer>
 </body>
 </html>

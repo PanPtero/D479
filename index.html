@@ -8,6 +8,18 @@
     <meta name="keywords" content="Taniti">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taniti - About the Island</title>
+    <script>
+        let pop = document.getElementbyId("pop")
+        function showAck() {
+            document.getElementById("pop").style.display = "flex"
+        }
+        function hideAck() {
+            document.getElementById("pop").style.display = "none"
+        }
+        function copy() {
+            alert("no rights reserved")
+        }
+    </script>
 </head>
 
 <body>
@@ -15,32 +27,61 @@
         <a class="logo deep" href="index.html">The Island of Taniti</a>
         <nav>
             <a class="nav active" href="index.html">HOME</a>
-            <a class="nav" href="entertainment.html">ATTRACTIONS</a>
             <a class="nav" href="resturaunts.html">FOOD</a>
             <a class="nav" href="visit.html">VISIT</a>
         </nav>
         <a href="search.html"><img src="media/search.png" onclick="" alt="Search Icon" width=40px height=40px></a>
     </header>
-    <div class="cover">
+    <div class="cover" style="background-image: url(media/tropical-Даниил_Хогоев.jpg)">
         <h1 class="floating">The Island of Taniti</h1>
         <p class="floating"><i>Paradise awaits you...</i></p>
         <a id="book">BOOK NOW</a>
     </div>
     <main>
-        <h1>Frequently Asked Questions</h1>
-        <ul>
-            <li>Power outlets are 120 volts (the same as in the United States).</li>
-            <li>Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.</li>
-            <li>The drinking age on Taniti is 18 and the drinking age is not strictly enforced.</li>
-            <li>Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</li>
-            <li>There is one hospital and several clinics. The hospital has many multilingual employees.</li>
-            <li>Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes.</li>
-            <li>Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</li>
-            <li>Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</li>
-        </ul>
+        <table>
+            <tr>
+                <td>
+                    <h1>Events in Taniti</h1>
+                </td>
+                <td>
+                    <p>Throughout the year, Taniti hosts a variety of events and festivals that showcase its rich culture and vibrant community. From traditional dance performances to modern music festivals, there's always something happening on the island. Don't miss the annual Taniti Carnival, a week-long celebration filled with parades, live music, and delicious local cuisine.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>Frequently Asked Questions</h1>
+                </td>
+                <td>
+                    <ul>
+                        <li>Power outlets are 120 volts (the same as in the United States).</li>
+                        <li>Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.</li>
+                        <li>The drinking age on Taniti is 18 and the drinking age is not strictly enforced.</li>
+                        <li>Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</li>
+                        <li>There is one hospital and several clinics. The hospital has many multilingual employees.</li>
+                        <li>Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes.</li>
+                        <li>Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</li>
+                        <li>Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
     </main>
     <footer>
-        <a>&copy; 2069 The Island of Taniti</a>|<a>Acknowledgements</a>
+        <div id="pop">
+            <div style="display:flex; flex-direction: row;">
+                <h2>Acknowledgements</h2>
+                <a id="x" onclick="hideAck()">X</a>
+            </div>
+            <hr>
+            <ul>
+                <li>Favicon created by Brenton "PanPtero" Baublitz</li>
+                <li>All images used on this site are licensed under Creative Commons 3.0 or 2.0</li>
+                <li>Cover image for Home page taken by <a href="https://pxhere.com/en/photographer/3461369">Даниил Хогоев</a></li>
+                <li>Images used on Food page taken by <a href="https://www.flickr.com/photos/tanuanand/">Tanu Anand</a></li>
+                <li>Cover image for Visit page taken by <a href=https://en.wikipedia.org/wiki/User:Aaron1a12">Aaron Escobar</a></li>
+            </ul>
+        </div>
+        <a onclick="copy()">&copy; 2069 The Island of Taniti</a>|<a onclick="showAck()">Acknowledgements</a>
     </footer>
 </body>
 
