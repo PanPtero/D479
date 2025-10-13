@@ -1,55 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="pan.css">
     <link rel="icon" href="media/ico.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taniti - Restaurants</title>
+    <title>Taniti - Restaurants</title>    
     <script>
-        function showAck() {
-            document.getElementById("pop").style.display = "flex"
+        function show(x) {
+            document.getElementById(x).style.display = "flex"
         }
-        function hideAck() {
-            document.getElementById("pop").style.display = "none"
+
+        function hide(x) {
+            document.getElementById(x).style.display = "none"
         }
+
         function copy() {
             alert("no rights reserved")
         }
     </script>
 </head>
+
+<header>
+    <a class="logo deep" href="index.html">The Island of Taniti</a>
+    <nav>
+        <a class="nav" href="index.html">HOME</a>
+        <a class="nav active" href="resturaunts.html">FOOD</a>
+        <a class="nav" href="visit.html">VISIT</a>
+    </nav>
+    <a href="cart.html"><img src="media/cart.png" title="Your cart" style="margin-left: 15px;width: 40px;height: 40px;"></a>
+</header>
+
 <body>
-    <header>
-        <a class="logo deep" href="index.html">The Island of Taniti</a>
-        <nav>
-            <a class="nav" href="index.html">HOME</a>
-            <a class="nav active" href="resturaunts.html">FOOD</a>
-            <a class="nav" href="visit.html">VISIT</a>
-        </nav>
-        <a href="search.html"><img src="media/search.png" alt="Search Icon" style="width:40px;height:40px; margin-left: auto;"></a>
-    </header>
     <main>
         <div style="display: flex; flex-direction: row;">
-            <img class="flick" src="media/Grocer-Tanu_Anand.jpg" width="256px" alt="A grocer in Taniti">
+            <img src="media/grocer-deepseek.jpg" width="256px" alt="A grocer in Taniti">
             <div style="display: flex; flex-direction: column;">
-                <h1>Grocery Stores</h1>
-                <p>Taniti has two supermarkets, two smaller grocery stores, and one convenience store that is open 24 hours a day.</p>
+                <h1>Grocery</h1>
+                <p>
+                    Sunny Side Grocers: Discover a cozy spot offering fresh ingredients, local specialties, and everyday items to keep your island adventure running smoothly.
+                </p>
+                <p>
+                    TaniTreasures Grocery: Find unique local products, beverages, and essentials at this charming shop, perfect for souvenirs and essentials alike.
+                </p>
+                <h3>Supermarkets</h3>
+                <p>
+                    Stock up on everything you need with a wide selection of local produce, snacks, and essentials. Tropical Fresh Market and Island’s Best Supermarket are global chains and are sure to have what you're craving, when you're craving it.
+                </p>
             </div>
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column;" align="right">
+                <h1>Night Owl Convenience</h1>
+                <p>
+                    Always open, day or night, for snacks, drinks, toiletries, and last-minute needs—your reliable companion at any hour. Always open and ready to serve, Night Owl Convenience is your go-to shop for everything you need at any hour. Whether you’re craving a midnight snack, need fresh beverages, toiletries, or emergency essentials, this friendly store has you covered. Located conveniently in the heart of Taniti, it’s perfect for travelers who keep late hours or need quick supplies after a day of exploring the island. Reliable, accessible, and stocked with a variety of local and international treats, Night Owl Convenience ensures you’re never far from what you need, no matter the time.
+                </p>
+            </div>
+            <img src="media/bakey-deepseek.jpg" width="192" alt="A grocer in Taniti" style="margin-left: auto;">
         </div>
         <hr class="deep">
         <div style="display: flex; flex-direction: row;">
+            <img src="media/wrap-deepseek.jpg" width="320" alt="Pan-Asian cuisine">
             <div style="display: flex; flex-direction: column; margin-left: auto;">
-                <h1>Restaurants</h1> 
-                <p>Taniti currently has 10 restaurants: five serve mostly local fish and rice, three serve American-style meals, and two serve Pan-Asian cuisine.</p>
+                <h1>Local Favorites</h1> 
+                <ul>
+                    <li>Seaside Serenity:
+                        Savor the freshest catch of the day paired with fragrant rice, all set against the tranquil ocean backdrop. A true taste of Taniti’s coastal charm.
+                    </li>
+                    <li>The Tidal Table:
+                        Dive into authentic local flavors with expertly prepared fish dishes and fluffy rice, perfect for a laid-back island feast.
+                    </li>
+                    <li>Ocean’s Bounty:
+                        Experience the bounty of Taniti’s waters with deliciously grilled fish and savory rice, served in a cozy seaside setting.
+                    </li>
+                    <li>Harbor House:
+                        Enjoy traditional fish and rice specialties that have been passed down through generations, offering a genuine taste of island life.
+                    </li>
+                    <li>Crab & Coast:
+                        Indulge in fresh seafood and hearty rice bowls, crafted with love and the day’s best catches in a welcoming atmosphere.
+                    </li>
+                </ul>
             </div>
-            <img class="flick" src="media/Food-Tanu_Anand.jpg" width="256px" alt="Pan-Asian cuisine" style="margin-right: auto;">
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <div style="display: flex; flex-direction: column; margin-left: auto;">
+                <h1 align="right">American Dining</h1>
+                <ul>
+                    <li>Liberty Eats: 
+                        Satisfy your craving with juicy burgers, crispy fries, and classic American comfort foods in a lively, friendly setting.
+                    </li>
+                    <li>The Big Apple Diner:
+                        Experience a slice of home with hearty breakfasts, milkshakes, and all-American favorites that will make you feel right at home.
+                    </li>
+                    <li>
+                        Star-Spangled Grill:
+                        From sizzling steaks to smoky BBQ ribs, enjoy hearty American cuisine with a tropical twist, perfect for fueling your island adventures.
+                    </li>
+                </ul>
+            </div>
+            <img src="media/burger-deepseek.jpg" width="192" alt="Pan-Asian cuisine">
+        </div>
+        <div style="display: flex; flex-direction: row;">
+            <img src="media/asian-deepseek.jpg" width="256px" alt="Pan-Asian cuisine">
+            <div style="display: flex; flex-direction: column; margin-left: auto;">
+                <h1>Dishes of the Pacific</h1>
+                <ul>
+                    <li>
+                        Lotus Blossom:
+                        Discover the vibrant flavors of Asia with beautifully crafted sushi, stir-fries, and aromatic curries in a serene setting.
+                    </li>
+                    <li>
+                        Dragon Pearl:
+                        Embark on a culinary journey with authentic Chinese, Thai, and Vietnamese dishes, blending bold spices and fresh ingredients.
+                    </li>
+                </ul>
+            </div>
         </div>
     </main>
-    <div id="pop">
-        <div style="display:flex; flex-direction: row;">
+</body>
+
+<footer>
+    <div id="ackno">
+        <span style="display:flex; flex-direction: row;" title="Press X to close this pop-up">
             <h2>Acknowledgements</h2>
-            <a id="x" onclick="hideAck()">X</a>
-        </div>
+            <a id="x" onclick="hide('ackno')">X</a>
+        </span>
         <hr>
         <ul>
             <li>Favicon created by Brenton "PanPtero" Baublitz</li>
@@ -59,8 +135,18 @@
             <li>Cover image for Visit page taken by <a href="https://en.wikipedia.org/wiki/User:Aaron1a12">Aaron Escobar</a></li>
         </ul>
     </div>
-    <footer>
-        <a onclick="copy()">&copy; 2069 The Island of Taniti</a>|<a onclick="showAck()">Acknowledgements</a>
-    </footer>
-</body>
+    <div id="support">
+        <span style="display:flex; flex-direction: row;" title="Press X to close this pop-up">
+            <h2>Support</h2>
+            <a id="x" onclick="hide('support')">X</a>
+        </span>
+        <hr>
+        <p>Email:  Taniti@us.gov</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Fax: (212) 555-1234</p>
+        <p>Post:  42069 Palm lane, Tahiti, US Teritories</p>
+    </div>
+    <a onclick="show('ackno')">Acknowledgements</a>|<a onclick="copy()">&copy; 2069 The Island of Taniti</a>|<a onclick="show('support')">Support</a>
+</footer>
+
 </html>

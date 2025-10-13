@@ -1,9 +1,15 @@
 * {
+    font-family: Arial, Helvetica, sans-serif;
     animation-name: fade;
     animation-duration: 1s;
     transition: background-color 0.3s, color 0.3s;
     box-sizing: border-box;
     margin: 0;
+}
+
+.center {
+    align-self: center;
+    justify-self: center;
 }
 
 a {
@@ -20,7 +26,40 @@ li, p, h1, h2, h3, h4 {
 
 td {align-content: first baseline;}
 
-#pop {
+#book {
+    text-align: center;
+    font-weight: bold;
+    border-radius: 15px;
+    width: 256px;
+    align-self: center;
+    background-color: #7fffd4;
+    color: black;
+    padding: 20px;
+}
+
+.form, .clicka {
+    width: 256px;
+    margin: 4px;
+    padding: 16px;
+    color: #000000;
+    border-radius: 32px;
+    border: 2px solid #7fffd4;
+    background-color: #ffffff;
+}
+
+.clicka {
+    font-weight: bold;
+    background-color: #7fffd4;
+}
+
+#init {
+    width: 100%;
+    display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+#pop, #support, #ackno {
     display: none;
     flex-direction: column;
     position: fixed;
@@ -79,7 +118,7 @@ nav {
     margin-left: auto;
 }
 
-.flick {
+img {
     border-radius: 13px;
     margin:5px;
 }
@@ -113,6 +152,7 @@ nav {
 }
 
 .cover {
+    font-family:'Courier New', Courier, monospace;
     background-size: cover;
     text-align: center;
     display: flex;
@@ -124,18 +164,9 @@ nav {
     width: 100%;
 }
 
-.floating {padding-bottom: 20px}
-
-#book {
-    text-align: center;
-    font-weight: bold;
-    border-radius: 15px;
-    width: 256px;
-    align-self: center;
-    background-color: aquamarine;
-    color: black;
-    padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+.floating {
+    font-family:'Courier New', Courier, monospace;
+    padding-bottom: 20px;
 }
 
 
