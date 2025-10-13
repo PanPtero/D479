@@ -3,44 +3,93 @@
 
 <head>
     <link rel="stylesheet" href="pan.css">
+    <link rel="">
     <link rel="icon" href="media/ico.png">
     <meta charset="UTF-8">
     <meta name="keywords" content="Taniti">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taniti - About the Island</title>
     <script>
-        function showAck() {
-            document.getElementById("pop").style.display = "flex"
+        function show(x) {
+            document.getElementById(x).style.display = "flex"
         }
-        function hideAck() {
-            document.getElementById("pop").style.display = "none"
+
+        function hide(x) {
+            document.getElementById(x).style.display = "none"
         }
+
         function copy() {
             alert("no rights reserved")
-        }
-        function temp() {
-            document.getElementById("book").innerHTML = "TRY AGAIN LATER"
         }
     </script>
 </head>
 
+<header>
+    <a class="logo deep" href="index.html">The Island of Taniti</a>
+    <nav>
+        <a class="nav active" href="index.html">HOME</a>
+        <a class="nav" href="resturaunts.html">FOOD</a>
+        <a class="nav" href="visit.html">VISIT</a>
+    </nav>
+    <a href="cart.html"><img src="media/cart.png" onclick="show('cart')" title="Your cart" style="margin-left: 15px;width: 40px;height: 40px;"></a>
+</header>
+
 <body>
-    <header>
-        <a class="logo deep" href="index.html">The Island of Taniti</a>
-        <nav>
-            <a class="nav active" href="index.html">HOME</a>
-            <a class="nav" href="resturaunts.html">FOOD</a>
-            <a class="nav" href="visit.html">VISIT</a>
-        </nav>
-        <a href="search.html"><img src="media/search.png" onclick="" alt="Search Icon" width=40px height=40px></a>
-    </header>
     <div class="cover" style="background-image: url(media/tropical-Даниил_Хогоев.jpg)">
         <h1 class="floating">The Island of Taniti</h1>
         <p class="floating"><i>Paradise awaits you...</i></p>
-        <a onclick="temp()" id="book">BOOK NOW</a>
+        <a class="clicka center" onclick="show('init')">BOOK NOW</a>
+        <div id="init">
+            <hr width="256">
+            <div style="display: flex;flex-direction: row;">
+                <p class="form">Travel prices vary by location</p>
+                <a class="clicka" target="_blank" href="https://www.google.com/travel/?dest_src=al&authuser=0">Check airline prices</a>
+            </div>
+            <hr width="256">
+            <div style="display: flex;flex-direction: row;">
+                <a class="clicka">Book at Featured resort: Palms of Taniti</a>
+                <p style="width:64px;height:64px;color:#ffffff;"><br><b>OR</b></p>
+                <a class="clicka" target="_blank" href="https://www.hotels.com/Hotel-Search?destination=Kahului%2C%20HI%2C%20United%20States%20of%20America%20%28OGG%29&regionId=4671311&latLong&propertyId=38921158&d1=2025-10-14&startDate=2025-10-14&d2=2025-10-15&endDate=2025-10-15&adults=2&rooms=1&sort=RECOMMENDED&theme=&userIntent=&semdtl=&categorySearch=&useRewards=false&children=&pwaDialog=&daysInFuture&stayLength">book another hotel in the location</a>
+            </div>
+            <div class="form" style="width:542px">
+                <p align="left">
+                    <img src="media/hotel-deepseek.jpg" align="left" width="128" height="128" style="margin:0 16px 0 0"> Just 20 minutes from Taniti International Airport and walking distance to local markets, Palms of Taniti combines island charm with modern luxury—offering unforgettable experiences under swaying palms and starlit skies. Each room is designed with private balconies, and modern amenities including high-speed Wi-Fi, rain showers, and smart TVs.
+                </p>
+                <h3>Amenities & Services:</h3>
+                <p align="left">
+                    ѻ Lagoon-style infinity pool<br>
+                    ѻ Full-service spa & wellness center (massages, facials, yoga)<br>
+                    ѻ Private beach with cabana service<br>
+                    ѻ Water sports center (snorkeling, kayaking, paddleboarding)<br>
+                    ѻ Guided island tours and cultural experiences<br>
+                    ѻ Kids' Club & Teen Lounge<br>
+                    ѻ 24/7 concierge and room service<br>
+                </p>
+                <h5>contact</h5>
+                <p>[phone] (574) 389-0678 [email] taniti@palms.com</p>
+            </div>
+            <a class="clicka" href="temp" style="width:320px">Book a stay at Palms of Taniti</a>
+        </div>
     </div>
     <main>
         <table>
+            <tr>
+                <td width="320">
+                    <h1>Attractions of Taniti</h1>
+                    <img align="right" src="media/beach-deepseek.jpg" width="320">
+                </td>
+                <td>
+                    <p>
+                        Escape to the idyllic white sandy beaches of Yellow Leaf Bay, just a short stroll from Taniti City. Relax on pristine shores, soak up the warm tropical sun, and enjoy gentle waves perfect for swimming and wading. With vibrant beachside cafes, water sports, and stunning sunsets, Yellow Leaf Bay is the perfect spot for suburban travelers seeking a peaceful retreat close to the city’s excitement. Unwind, refresh, and create unforgettable memories on this tropical paradise.
+                    </p>
+                    <p>
+                        Discover the breathtaking beauty of Taniti’s lush rainforest with our exhilarating hiking adventures. Traverse winding trails through vibrant foliage, listen to the symphony of exotic birds, and encounter hidden waterfalls along the way. For the thrill-seekers, venture to the island’s active volcano, where you can witness glowing lava flows and volcanic eruptions from safe, designated viewing areas. Whether you're seeking serene nature walks or adrenaline-pumping experiences, Taniti offers unforgettable journeys into its wild, volcanic heart.
+                    </p>
+                    <p>
+                        Discover the best attractions in Taniti, from stunning beaches to vibrant cultural sites. Whether you're looking for adventure, relaxation, or a bit of both, Taniti has something for everyone.
+                    </p>
+                </td>
+            </tr>
             <tr>
                 <td>
                     <h1>Events in Taniti</h1>
@@ -51,28 +100,30 @@
             </tr>
             <tr>
                 <td>
-                    <h1>Frequently Asked Questions</h1>
+                    <h1>Ground Transportation</h1>
                 </td>
                 <td>
-                    <ul>
-                        <li>Power outlets are 120 volts (the same as in the United States).</li>
-                        <li>Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m.</li>
-                        <li>The drinking age on Taniti is 18 and the drinking age is not strictly enforced.</li>
-                        <li>Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</li>
-                        <li>There is one hospital and several clinics. The hospital has many multilingual employees.</li>
-                        <li>Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes.</li>
-                        <li>Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</li>
-                        <li>Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</li>
-                    </ul>
+                    <p>Public buses serve Taniti City and run from 5 a.m. to 11 p.m. every day. Private buses serve the rest of the island. Taxis are available in Taniti City, and rental cars can be rented from a local rental agency near the airport. Bikes and helmets are available to rent from several vendors (helmets are required by law). Taniti City is fairly flat and very walkable. Many tourists stay in the area surrounding Merriton Landing: this area is easy to explore on foot.</p>
                 </td>
             </tr>
         </table>
+        <h3>FAQ:</h3>
+        <p>● Taniti uses the U.S. dollar as its currency, but many businesses will also accept euros and yen. Several banks facilitate currency exchange, and many businesses accept major credit cards.</p>
+        <p>● Power outlets are 120 volts (the same as in the United States).</p>
+        <p>● Alcohol is not allowed to be served or sold between the hours of midnight and 9:00 a.m. </p>
+        <p>● Many younger Tanitians speak fluent English. Very little English is spoken in rural areas, especially by the older residents.</p>
+        <p>● There is one hospital and several clinics. The hospital has many multilingual employees.</p>
+        <p>● Violent crime is very rare on Taniti, but as tourism increases, there are more reports of pickpocketing and other petty crimes.</p>
+        <p>● Taniti enjoys a large number of national holidays, and many tourist attractions and restaurants will be closed on holidays, so visitors should plan accordingly.</p>
     </main>
-    <div id="pop">
-        <div style="display:flex; flex-direction: row;">
+</body>
+
+<footer>
+    <div id="ackno">
+        <span style="display:flex; flex-direction: row;" title="Press X to close this pop-up">
             <h2>Acknowledgements</h2>
-            <a id="x" onclick="hideAck()">X</a>
-        </div>
+            <a id="x" onclick="hide('ackno')">X</a>
+        </span>
         <hr>
         <ul>
             <li>Favicon created by Brenton "PanPtero" Baublitz</li>
@@ -82,9 +133,18 @@
             <li>Cover image for Visit page taken by <a href="https://en.wikipedia.org/wiki/User:Aaron1a12">Aaron Escobar</a></li>
         </ul>
     </div>
-    <footer>
-        <a onclick="copy()">&copy; 2069 The Island of Taniti</a>|<a onclick="showAck()">Acknowledgements</a>
-    </footer>
-</body>
+    <div id="support">
+        <span style="display:flex; flex-direction: row;" title="Press X to close this pop-up">
+            <h2>Support</h2>
+            <a id="x" onclick="hide('support')">X</a>
+        </span>
+        <hr>
+        <p>Email:  Taniti@us.gov</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Fax: (212) 555-1234</p>
+        <p>Post:  42069 Palm lane, Tahiti, US Teritories</p>
+    </div>
+    <a onclick="show('ackno')">Acknowledgements</a>|<a onclick="copy()">&copy; 2069 The Island of Taniti</a>|<a onclick="show('support')">Support</a>
+</footer>
 
 </html>
