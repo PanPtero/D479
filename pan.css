@@ -50,8 +50,6 @@ td {align-content: first baseline;}
 }
 
 .clicka {
-    cursor: pointer;
-    user-select: none;
     font-weight: bold;
     background-color: #7fffd4;
 }
@@ -64,15 +62,15 @@ td {align-content: first baseline;}
 }
 
 #pop, #support, #ackno {
-    display: none;
-    flex-direction: column;
-    position: fixed;
     top: 25%;
     right: 25%;
     width: 50vw;
+    display: none;
+    position: fixed;
+    border-radius: 5px;
+    flex-direction: column;
     background-color: #f0f0f0;
     border: 2px solid #000000;
-    border-radius: 5px;
 }
 
 #x {
@@ -127,14 +125,13 @@ img {
     border-radius: 13px;
 }
 
-.logo {
+#logo {
     font-size: 24px;
     color: #000000;
     font-weight: bolder;
 }
 
 .nav {
-    gap: 10px;
     padding: 10px;
     color: #000000;
     font-weight: bold;
@@ -143,9 +140,7 @@ img {
     font-family: sans-serif;
 }
 
-.logo:hover, .nav:hover {text-decoration: none;}
-
-.nav:hover, .pointer {
+.nav:hover {
     color: #FFFFFF;
     background-color: #969696;
 }
@@ -174,10 +169,13 @@ img {
 }
 
 
-#book:hover, footer a {
+#book, footer a, .clicka, .nav, #logo {
     cursor: pointer;
+    user-select: none;
     text-decoration: none;
 }
+
+#book:hover, footer a:hover, .clicka:hover, .nav:hover, #logo:hover {text-decoration: none;}
 
 @keyframes fade {
     to {opacity: 1}
