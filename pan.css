@@ -1,10 +1,10 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
     animation-name: fade;
     animation-duration: 1s;
-    transition: background-color 0.3s, color 0.3s;
     box-sizing: border-box;
-    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .center {
@@ -27,14 +27,16 @@ li, p, h1, h2, h3, h4 {
 td {align-content: first baseline;}
 
 #book {
-    text-align: center;
-    font-weight: bold;
-    border-radius: 15px;
     width: 256px;
-    align-self: center;
-    background-color: #7fffd4;
-    color: black;
     padding: 20px;
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+    user-select: none;
+    align-self: center;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #7fffd4;
 }
 
 .form, .clicka {
@@ -48,6 +50,8 @@ td {align-content: first baseline;}
 }
 
 .clicka {
+    cursor: pointer;
+    user-select: none;
     font-weight: bold;
     background-color: #7fffd4;
 }
@@ -102,82 +106,82 @@ header {
 }
 
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     gap: 10px;
     z-index: 100;
     padding: 10px;
-    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: row;
     font-family: Recoleta;
+    justify-content: center;
+    background-color: #f0f0f0;
 }
 
 nav {
-    display: flex;
     gap: 10px;
+    display: flex;
     margin-left: auto;
 }
 
 img {
-    border-radius: 13px;
     margin:5px;
+    border-radius: 13px;
 }
 
 .logo {
-    color: black;
     font-size: 24px;
+    color: #000000;
     font-weight: bolder;
 }
 
 .nav {
-    color: black;
-    padding: 10px;
     gap: 10px;
-    font-family: sans-serif;
-    align-self: center;
+    padding: 10px;
+    color: #000000;
     font-weight: bold;
     border-radius: 5px;
+    align-self: center;
+    font-family: sans-serif;
 }
 
 .logo:hover, .nav:hover {text-decoration: none;}
 
 .nav:hover, .pointer {
-    background-color: #969696;
     color: #FFFFFF;
+    background-color: #969696;
 }
 
 .active {
-    background-color: #202020;
     color: #FFFFFF;
+    background-color: #202020;
 }
 
 .cover {
-    font-family:'Courier New', Courier, monospace;
-    background-size: cover;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    position: relative;
     left: 0;
-    color: #FFFFFF;
     padding: 5%;
     width: 100%;
+    display: flex;
+    color: #FFFFFF;
+    position: relative;
+    text-align: center;
+    background-size: cover;
+    flex-direction: column;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .floating {
-    font-family:'Courier New', Courier, monospace;
     padding-bottom: 20px;
+    font-family:'Courier New', Courier, monospace;
 }
 
 
 #book:hover, footer a {
-    text-decoration: none;
     cursor: pointer;
+    text-decoration: none;
 }
 
 @keyframes fade {
-    from {opacity: 0}
     to {opacity: 1}
+    from {opacity: 0}
 }
 
 @media (max-width: 664px) {
