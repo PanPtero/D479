@@ -1,3 +1,5 @@
+html {min-width: 600px}
+
 * {
     margin: 0;
     animation-name: fade;
@@ -11,6 +13,17 @@
     align-self: center;
     justify-self: center;
 }
+
+.row, .col {
+    width: 100%;
+    gap: 2px;
+    display:flex;
+    justify-content: center;
+}
+
+.row {flex-direction: row;}
+
+.col {flex-direction: column;}
 
 a {
     color: #ff7b00;
@@ -27,20 +40,18 @@ li, p, h1, h2, h3, h4 {
 td {align-content: first baseline;}
 
 #book {
-    width: 256px;
-    padding: 20px;
-    cursor: pointer;
+    width: 300px;
+    padding: 16px;
     color: #000000;
     font-weight: bold;
-    user-select: none;
     align-self: center;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 32px;
     background-color: #7fffd4;
 }
 
 .form, .clicka {
-    width: 256px;
+    width: 30%;
     margin: 4px;
     padding: 16px;
     color: #000000;
@@ -122,6 +133,7 @@ nav {
 
 img {
     margin:5px;
+    resize: none;
     border-radius: 13px;
 }
 
@@ -155,6 +167,7 @@ img {
     padding: 5%;
     width: 100%;
     display: flex;
+    min-width: 600px;
     color: #FFFFFF;
     position: relative;
     text-align: center;
